@@ -59,7 +59,7 @@ class App extends Component {
   loginHandler = (event, authData) => {
     event.preventDefault();
     this.setState({ authLoading: true });
-    fetch('http://localhost:8080/auth/login', 
+    fetch('https://we-flex-back-end.herokuapp.com/auth/login', 
     {
       method: 'POST',
       headers : {
@@ -110,7 +110,7 @@ class App extends Component {
   signupHandler = (event, authData) => {
     event.preventDefault();
     this.setState({ authLoading: true });
-    fetch('http://localhost:8080/auth/signup', {
+    fetch('https://we-flex-back-end.herokuapp.com/auth/signup', {
       method: 'PUT',
       headers : {
         'Content-Type': 'application/json'
